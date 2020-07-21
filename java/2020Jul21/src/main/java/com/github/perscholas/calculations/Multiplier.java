@@ -8,12 +8,10 @@ public class Multiplier extends Calculator {
     private final String DIVIDE = "÷";
 
     public Multiplier() {
-        super(0);
     }
 
     @Override
     public void add(int operand1, int operand2) {
-        super.calculate();
         System.out.println("Hey I am adding the values!");
         super.add(operand1, operand2);
         System.out.println("I have completed my calculation!");
