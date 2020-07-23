@@ -1,10 +1,10 @@
-package com.github.perscholas;
+package com.github.perscholas.exceptions;
 
+import com.github.perscholas.exceptions.IOExceptionHandler;
 import org.junit.Test;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.logging.Logger;
 
 /**
  * Created by leon on 7/23/2020.

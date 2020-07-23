@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package com.github.perscholas.exceptions;
 
 import java.io.FileWriter;
 import java.io.IOException;

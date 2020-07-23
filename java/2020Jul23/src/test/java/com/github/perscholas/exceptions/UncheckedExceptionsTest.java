@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package com.github.perscholas.exceptions;
 
 import org.junit.Test;
 
