@@ -7,12 +7,14 @@ public class MyObjectTest {
     @Test
     public void testRun() { // TODO
         // Given
-        MyObject myObject = new MyObject();
+        Object firstName = "Leon";
+        Object lastName = "Leon";
+        Object age = 999;
 
         // when
-        myObject.run();
+//        Person person = new Person(firstName, lastName, age);
 
         //then
-        Assert.assertNotNull(myObject.toString());
+//        Assert.assertNotNull(myObject.toString());
     }
 }
