@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * Created by leon on 7/28/2020.
  */
-public class HomogenousListTest {
+public class HeterogenousList {
     @Test
     public void test() {
         List<Object> list = new ArrayList<>();
