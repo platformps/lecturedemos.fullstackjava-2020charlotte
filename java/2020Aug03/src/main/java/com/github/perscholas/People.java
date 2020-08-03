@@ -3,6 +3,7 @@ package com.github.perscholas;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 
 /**
  * Created by leon on 8/3/2020.
@@ -26,13 +27,35 @@ public class People<SomePersonType extends Person> {
         list.remove(somePerson);
     }
 
-    public SomePersonType findById(Long id) {
-        Optional<SomePersonType> optionalPerson = list
+    public void removeById(Long id) {
+        remove(findById(id));
+    }
+
+    public SomePersonType where(Predicate<SomePersonType> filterClause) {
+        return list
                 .stream()
-                .sorted()
-                .filter(person -> person.getId().equals(id))
-                .findFirst();
-        SomePersonType personForSure = optionalPerson.orElseGet(() -> (SomePersonType)new Person());
-        return personForSure;
+                .filter(filterClause)
+                .findFirst()
+                .get();
+    }
+
+    public SomePersonType findByFirstName(String firstName) {
+        return where(person -> person.getFirstName().equalsIgnoreCase(firstName));
+    }
+
+    public SomePersonType findById(Long id) {
+        return where(person -> person.getId().equals(id));
+    }
+
+    public void removeAll() {
+        list.clear();
+    }
+
+    public Boolean contains(SomePersonType somePerson) {
+        return list.contains(somePerson);
+    }
+
+    public Integer count() {
+        return list.size();
     }
 }
