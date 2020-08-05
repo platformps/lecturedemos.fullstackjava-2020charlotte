@@ -5,7 +5,7 @@ import org.junit.Test;
 /**
  * Created by leon on 8/5/2020.
  */
-public class Slide5Test {
+public class CurrentThreadTest {
     @Test
     public void test() {
         Thread currentThread = Thread.currentThread();
