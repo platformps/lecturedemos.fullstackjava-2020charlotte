@@ -1,6 +1,9 @@
 package com.github.perscholas;
 
-import com.github.perscholas.mutability.ImmutableMessage;
+import com.github.perscholas.mutability.AllegedImmutableMessage;
+import com.github.perscholas.mutability.CovingtonImmutableMessage;
+import com.github.perscholas.mutability.ImmutableMessageInterface;
+import com.github.perscholas.mutability.PrototypicalImmutableMessage;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,10 +14,8 @@ import java.util.HashMap;
  * Created by leon on 8/6/2020.
  */
 public class ImmutableMessageTest {
-    @Test
-    public void test() {
+    private void test(ImmutableMessageInterface mutableMessage) {
         // given
-        ImmutableMessage mutableMessage = new ImmutableMessage("Subject Title", "Message Body", new HashMap<>());
         String representationOfKeysBeforePut = Arrays.asList(mutableMessage.getHeader().keySet()).toString();
         mutableMessage.getHeader().put("New Key", "New value");
 
@@ -24,4 +25,20 @@ public class ImmutableMessageTest {
         // then
         Assert.assertEquals(representationOfKeysBeforePut, representationOfKeysAfterPut);
     }
+
+    @Test
+    public void testPrototypicalImmutableMessage() {
+        test(new PrototypicalImmutableMessage("Subject Title", "Message Body", new HashMap<>()));
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void testCovingtonImmutableMessage() {
+        test(new CovingtonImmutableMessage("Subject Title", "Message Body", new HashMap<>()));
+    }
+
+    @Test
+    public void testAllegedImmutableMessage() {
+        test(new AllegedImmutableMessage("Subject Title", "Message Body", new HashMap<>()));
+    }
+
 }
