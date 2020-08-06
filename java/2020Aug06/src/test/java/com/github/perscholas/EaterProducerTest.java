@@ -1,6 +1,7 @@
 package com.github.perscholas;
 
-import com.github.perscholas.eaterproducer.EaterProducer;
+import com.github.perscholas.eaterproducer.Eater;
+import com.github.perscholas.eaterproducer.Producer;
 
 import java.util.Arrays;
 import java.util.List;
@@ -11,8 +12,8 @@ import java.util.function.Supplier;
  */
 public class EaterProducerTest {
     public static void main(String[] args) {
-        List<Thread> eaterThreads = createThreadPool(5, EaterProducer.Eater::new); // create 5 eaters
-        Thread producerThread = new Thread(new EaterProducer.Producer(), "Producer"); // create 1 producer
+        List<Thread> eaterThreads = createThreadPool(5, Eater::new); // create 5 eaters
+        Thread producerThread = new Thread(new Producer(), "Producer"); // create 1 producer
         eaterThreads.forEach(Thread::start); // start all 5 eaters
         producerThread.start(); // start the 1 producer
         eaterThreads.forEach(thread -> {
