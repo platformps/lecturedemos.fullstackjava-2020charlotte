@@ -1,9 +1,10 @@
-package com.github.perscholas;
+package com.github.perscholas.lecture1;
+
+import com.github.perscholas.lectureutils.LocalHomeDirectoryReference;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Scanner;
-import java.util.stream.Stream;
 
 /**
  * Created by leon on 8/10/2020.

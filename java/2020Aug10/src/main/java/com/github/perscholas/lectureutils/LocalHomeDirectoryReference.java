@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package com.github.perscholas.lectureutils;
 
 import java.io.File;
 
@@ -18,6 +18,13 @@ public enum LocalHomeDirectoryReference {
     }
 
     public File getFile(String fileName) {
-        return new File(targetDirectory + fileName);
+        return new File(getFileName(fileName));
+    }
+
+    public String getFileName(String fileName) {
+        if (fileName.startsWith("/")) {
+            return targetDirectory + fileName;
+        }
+        return getFileName("/" + fileName);
     }
 }

@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package com.github.perscholas.lecture1;
 
 import java.io.File;
 import java.io.IOException;
