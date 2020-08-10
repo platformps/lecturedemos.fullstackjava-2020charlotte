@@ -3,6 +3,7 @@ package com.github.perscholas.monica;
 /**
  * Created by leon on 8/10/2020.
  */
+@FunctionalInterface
 public interface SomeInterface {
     void oneMethod();
 
