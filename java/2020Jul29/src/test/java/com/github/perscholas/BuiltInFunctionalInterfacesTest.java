@@ -91,7 +91,7 @@ public class BuiltInFunctionalInterfacesTest {
 
     @Test
     public void nestedFunctionTest() {
-        BiFunction<BiFunction<String, String, Integer>, String, Integer> func = null; // TODO
+        BiFunction<BiFunction<String, String, Integer>, String, Integer> func = null;
     }
 
     @Test
