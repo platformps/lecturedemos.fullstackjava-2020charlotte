@@ -2,7 +2,7 @@ package com.github.perschola;
 
 import com.github.perschola.model.Item;
 import com.github.perschola.model.ItemInterface;
-import com.github.perschola.service.ItemContainer;
+import com.github.perschola.service.ItemContainerInterface;
 import com.github.perschola.utils.IOConsole;
 
 import java.util.function.BiConsumer;
@@ -22,10 +22,11 @@ public enum UserAction {
         item.setItemName(itemName);
         item.setItemDesc(itemDescription);
         item.setItemPrice(itemPrice);
-        item.setQuantity(itemQuantity);
+        item.setAvailableQuantity(itemQuantity);
         groceryStore.add(item);
         ioConsole.println("%s successfully added", itemName);
     }),
+
     ADD_TO_CART((groceryStore, cart) -> {
         IOConsole ioConsole = new IOConsole();
         String itemName = ioConsole.getStringInput("Enter the name of the item");
@@ -37,8 +38,7 @@ public enum UserAction {
             ioConsole.println("%s is not currently in stock", itemName);
         }
     }),
-    DISPLAY_CART((groceryStore, cart) -> cart.display()),
-    DISPLAY_SYSTEM((groceryStore, cart)-> groceryStore.display()),
+
     REMOVE_FROM_CART((groceryStore, cart)-> {
         IOConsole ioConsole = new IOConsole();
         String itemName = ioConsole.getStringInput("Enter the name of the item to be removed from the cart.");
@@ -53,6 +53,7 @@ public enum UserAction {
             ioConsole.println("%s is not an item in your cart", itemName);
         }
     }),
+
     REMOVE_FROM_SYSTEM((groceryStore, cart)-> {
         IOConsole ioConsole = new IOConsole();
         String itemName = ioConsole.getStringInput("Enter the name of the item to be removed from the system.");
@@ -67,16 +68,24 @@ public enum UserAction {
             ioConsole.println("%s is not an item in the system", itemName);
         }
     }),
+    DISPLAY_CART((groceryStore, cart) -> cart.display()),
+    DISPLAY_SYSTEM((groceryStore, cart)-> groceryStore.display()),
     QUIT((groceryStore, cart) -> new IOConsole().println("Bye!"));
 
 
-    private BiConsumer<ItemContainer, ItemContainer> operationToBeRan;
+    private BiConsumer<ItemContainerInterface, ItemContainerInterface> operationToBeRan;
 
-    UserAction(BiConsumer<ItemContainer, ItemContainer> operationToBeRan) {
+    UserAction(BiConsumer<ItemContainerInterface, ItemContainerInterface> operationToBeRan) {
         this.operationToBeRan = operationToBeRan;
     }
 
-    public void perform(ItemContainer groceryStore, ItemContainer cart) {
+    public static UserAction getValueOf(String toUpperCase) {
+        return valueOf(toUpperCase
+                .replaceAll("-", "_")
+                .toUpperCase());
+    }
+
+    public void perform(ItemContainerInterface groceryStore, ItemContainerInterface cart) {
         operationToBeRan.accept(groceryStore, cart);
     }
 }

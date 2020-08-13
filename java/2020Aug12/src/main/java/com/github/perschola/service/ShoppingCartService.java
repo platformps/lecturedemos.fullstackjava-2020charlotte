@@ -1,4 +1,5 @@
 package com.github.perschola.service;
 
-public class ShoppingCartService {
+public class ShoppingCartService extends AbstractItemContainer {
+
 }
