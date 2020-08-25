@@ -24,10 +24,10 @@
         }
     %>
 
-<form method="post">
-    UserName<input type="text" name="username"/><br />
-    Password<input type="text" name="password"><br />
-    <input type="submit" name="login" value="Login" />
-</form>
+    <form method="post">
+        UserName<input type="text" name="username"/><br />
+        Password<input type="text" name="password"><br />
+        <input type="submit" name="login" value="Login" />
+    </form>
 </body>
 </html>
