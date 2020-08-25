@@ -1,3 +1,5 @@
+package java.com.github.perscholas;
+
 public class User {
 
     private String id;

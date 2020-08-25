@@ -1,3 +1,5 @@
+package java.com.github.perscholas;
+
 import org.codehaus.jackson.map.ObjectMapper;
 
 import javax.servlet.ServletConfig;
