@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by leon on 8/27/2020.
  */
 @Controller
-@RequestMapping(name = "/person-controller")
+@RequestMapping(value = "/person-controller")
 public class PersonController {
     private PersonService service;
 
@@ -21,7 +21,7 @@ public class PersonController {
         this.service = service;
     }
     
-    @GetMapping(name = "/get-all")
+    @GetMapping(value = "/get-all")
     public ResponseEntity<?> getAll() {
         return new ResponseEntity<>(service.findAll(), HttpStatus.OK);
     }
