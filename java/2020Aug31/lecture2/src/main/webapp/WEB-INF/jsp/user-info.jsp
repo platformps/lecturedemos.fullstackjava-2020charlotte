@@ -7,7 +7,7 @@
         </div>
         <div class="sub_field">
             <label>Password</label>
-            <input type="text" id="pass" name = "password" value=${password} />
+            <input type="password" id="pass" name = "password" value=${password} />
         </div>
         <div class="sub_field">
             <label>Email</label>

@@ -11,7 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 @RequestMapping("/index-controller")
 @SessionAttributes("userKey")
 public class IndexController {
-    
+
     @ModelAttribute("userKey")
     public User setUpUserForm() {
         return new User();
@@ -27,7 +27,7 @@ public class IndexController {
             @RequestParam("username") String username,
             @RequestParam("email") String email,
             @RequestParam("password") String password) {
-        ModelAndView mav = new ModelAndView("user-page");
+        ModelAndView mav = new ModelAndView("user-info");
         mav.addObject("username", username);
         mav.addObject("password", password);
         mav.addObject("email", email);
