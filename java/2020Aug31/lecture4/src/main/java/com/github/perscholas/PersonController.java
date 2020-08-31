@@ -8,7 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -33,10 +32,17 @@ public class PersonController {
     @GetMapping("/view")
     public String getView(Model model) {
         List<Person> personList = service.getAll();
-        String valueToInject = personList.toString();
+        StringBuilder injectionValueBuilder = new StringBuilder();
+        for (Person person : personList) {
+            injectionValueBuilder
+                    .append("<ul>")
+                    .append(person.toJson())
+                    .append("</ul>");
+        }
+        String valueToInject = injectionValueBuilder.toString();
         String nameOfVariable = "msg";
         String jspName = "index";
-        model.addAttribute(nameOfVariable,valueToInject);
+        model.addAttribute(nameOfVariable, valueToInject);
         return jspName;
     }
 }

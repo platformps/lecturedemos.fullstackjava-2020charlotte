@@ -5,6 +5,9 @@
 
 <html lang="en">
     <body>
-        <h2>${msg}</h2>
+        <h2>This is a list of all persons in database:</h2>
+        <li>
+            ${msg}
+        </li>
     </body>
 </html>
