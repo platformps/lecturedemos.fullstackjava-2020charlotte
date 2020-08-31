@@ -8,7 +8,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Created by leon on 8/31/2020.
  */
 @Controller
-@RequestMapping("/index-controller")
+@RequestMapping("/")
 @SessionAttributes("userKey")
 public class IndexController {
     
@@ -34,8 +34,8 @@ public class IndexController {
         return mav;
     }
 
-    @RequestMapping(value = "/userInfoConfirm", method = RequestMethod.POST)
-    public ModelAndView userInfoConfirm(@RequestAttribute("userKey") User user) {
+    @PostMapping(value = "/userInfo_confirm")
+    public ModelAndView userInfoConfirm(@ModelAttribute("userKey") User u) {
         return new ModelAndView("user-account-page");
     }
     

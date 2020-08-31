@@ -1,11 +1,11 @@
-<% User u = (User)session.getAttribute("userKey"); %>
+<%@ page import="com.github.perscholas.User" %><% User u = (User)session.getAttribute("userKey"); %>
 <h1>Change User Information</h1>
 <div class="container">
     <form action="submit-changes" method="POST">
         <div class="sub_field">
             <label>User Name</label>
             <input type="text" id="user" name="username"
-                value=<%=u.getPassword()%> />
+                value=<%=u.getUsername()%> />
         </div>
         <div>
             <label>Password</label>

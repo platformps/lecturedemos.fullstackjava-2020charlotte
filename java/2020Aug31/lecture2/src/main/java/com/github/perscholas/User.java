@@ -6,9 +6,8 @@ import javax.persistence.Id;
 /**
  * Created by leon on 8/31/2020.
  */
-@Entity
+
 public class User {
-    @Id
     private String username;
     private String password;
     private String email;
@@ -36,4 +35,6 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+
+
 }

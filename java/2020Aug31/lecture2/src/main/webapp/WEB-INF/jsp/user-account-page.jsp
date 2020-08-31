@@ -1,14 +1,14 @@
-<% User u = (User)session.getAttribute("userKey"); %>
+<%@ page import="com.github.perscholas.User" %><% User u = (User)session.getAttribute("userKey"); %>
 
 <div class="user_table">
     <table>
         <tr>
             <td>User Name</td>
-            <td><%=u.getUsername()></td>
+            <td><%= u.getUsername() %></td>
         </tr>
         <tr>
             <td>Password</td>
-            <td><%=u.getUserPassword()></td>
+            <td><%= u.getPassword() %></td>
         </tr>
         <tr>
             <td>Email</td>

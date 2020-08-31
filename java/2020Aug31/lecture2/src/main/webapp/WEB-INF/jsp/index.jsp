@@ -6,6 +6,11 @@
         </div>
 
         <div class="sub_field">
+            <label>Password</label>
+            <input type="password" id="pass" name="password" />
+        </div>
+
+        <div class="sub_field">
             <label>Email</label>
             <input type="text" id="email" name="email" />
         </div>
