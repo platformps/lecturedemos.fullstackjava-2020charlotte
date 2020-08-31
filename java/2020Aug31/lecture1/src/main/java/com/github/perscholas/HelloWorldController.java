@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/hello-world")
 public class HelloWorldController {
+
+
     @GetMapping
     String getView(Model model) {
         String valueToInject = "This is is an injected message";
