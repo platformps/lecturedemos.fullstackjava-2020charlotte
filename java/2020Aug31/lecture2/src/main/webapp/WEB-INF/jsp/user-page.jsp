@@ -4,15 +4,15 @@
         <div class="sub_field">
             <label>User Name</label>
             <input type="text" id="user" name = "username" value=${username} />
-        <div>
+        </div>
         <div class="sub_field">
             <label>Password</label>
             <input type="text" id="password" name = "password" value=${password} />
-        <div>
+        </div>
         <div class="sub_field">
             <label>Email</label>
             <input type="text" id="email" name = "email" value=${email} />
-        <div>
+        </div>
         <div class="btn">
             <input type="submit" name="submit" value="Submit Info" />
         </div>
