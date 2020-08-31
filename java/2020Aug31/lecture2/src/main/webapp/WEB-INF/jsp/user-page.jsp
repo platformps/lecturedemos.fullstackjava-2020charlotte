@@ -1,13 +1,13 @@
 <h1>Confirm your Info</h1>
-<div class="conteiner">
-    <form action="userInfo_confirm" method="POST">
+<div class="container">
+    <form action="userInfoConfirm" method="POST">
         <div class="sub_field">
             <label>User Name</label>
             <input type="text" id="user" name = "username" value=${username} />
         </div>
         <div class="sub_field">
             <label>Password</label>
-            <input type="text" id="password" name = "password" value=${password} />
+            <input type="text" id="pass" name = "password" value=${password} />
         </div>
         <div class="sub_field">
             <label>Email</label>
