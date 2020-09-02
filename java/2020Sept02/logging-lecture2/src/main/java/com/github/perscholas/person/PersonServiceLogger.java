@@ -1,38 +1,25 @@
-package com.github.perscholas;
+package com.github.perscholas.person;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.github.perscholas.utils.LoggerInterface;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created by leon on 9/2/2020.
  */
-@Service
-public class PersonServiceLogger implements PersonServiceInterface{
+public class PersonServiceLogger implements LoggerInterface, PersonServiceInterface {
     private PersonServiceInterface serviceToBeLogged;
 
-    @Autowired
-    public PersonServiceLogger(PersonService serviceToBeLogged) {
+    public PersonServiceLogger(PersonServiceInterface serviceToBeLogged) {
         this.serviceToBeLogged = serviceToBeLogged;
     }
 
-    private Logger getLogger() {
-        return Logger.getLogger(getClass().getName());
-    }
-    private void info(String message, Object... args) {
-        getLogger().log(Level.INFO, String.format(message, args));
-    }
-
-
     @Override
     public Person create(Person person) {
-        info( "Attempting to create the following person\n\t %s", person.toString());
+        info("Attempting to create the following person\n\t %s", person.toString());
         Person persistedPerson = serviceToBeLogged.create(person);
-        info( "Successfully created the following person\n\t %s", person.toString());
+        info("Successfully created the following person\n\t %s", person.toString());
         return persistedPerson;
     }
 

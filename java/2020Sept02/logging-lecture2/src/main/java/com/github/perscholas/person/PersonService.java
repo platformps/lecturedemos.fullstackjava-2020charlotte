@@ -1,7 +1,4 @@
-package com.github.perscholas;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+package com.github.perscholas.person;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,34 +6,35 @@ import java.util.List;
 /**
  * Created by leon on 9/2/2020.
  */
-@Service
 public class PersonService implements PersonServiceInterface {
+    private List<Person> repository;
 
-    private PersonRepository repository;
-
-    @Autowired
-    public PersonService(PersonRepository repository) {
+    public PersonService(List<Person> repository) {
         this.repository = repository;
+    }
+
+    public PersonService() {
+        this(new ArrayList<>());
     }
 
     @Override
     public Person create(Person person) {
-        Person persistedPerson = repository.save(person);
-        return persistedPerson;
+        repository.add(person);
+        return person;
     }
 
     @Override
     public Person readById(Long id) {
-        Person personInDatabase = repository.findById(id).get();
-        return personInDatabase;
+        return repository
+                .stream()
+                .filter(person -> person.getId().equals(id))
+                .findFirst()
+                .get();
     }
 
     @Override
     public List<Person> readAll() {
-        Iterable<Person> iterablePerson = repository.findAll();
-        List<Person> personList = new ArrayList<>();
-        iterablePerson.forEach(personList::add);
-        return personList;
+        return repository;
     }
 
     @Override
@@ -45,14 +43,13 @@ public class PersonService implements PersonServiceInterface {
         personInDatabase.setFirstName(newData.getFirstName());
         personInDatabase.setLastName(newData.getLastName());
         personInDatabase.setBirthDate(newData.getBirthDate());
-        personInDatabase = repository.save(personInDatabase);
         return personInDatabase;
     }
 
     @Override
     public Person deleteById(Long idOfPersonToDelete) {
         Person personToBeDeleted = readById(idOfPersonToDelete);
-        repository.delete(personToBeDeleted);
+        repository.remove(personToBeDeleted);
         return personToBeDeleted;
     }
 }

@@ -1,6 +1,5 @@
 package com.github.perscholas;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.logging.Level;
