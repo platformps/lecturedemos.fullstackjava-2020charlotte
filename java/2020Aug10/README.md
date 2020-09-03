@@ -1,0 +1,4 @@
+# 2020 August 10 Lecture Demonstration
+* Sorry, I wish I would utilize the README in these lecture demos more often.
+* In [this slide presentation](https://docs.google.com/presentation/d/e/2PACX-1vT9lcXlGz2UQF7Riw66SskGxr_ZmPWXrjtZDOaDMO0_yk4qJn4LTRTdnszrLg5M8Q/pub?start=false&loop=false&delayms=3000#slide=id.p5) it states that you should read the article in the [link below](https://www.google.com/url?q=http://ecomputernotes.com/java/stream/byte-stream-classes&sa=D&ust=1597082442662000&usg=AFQjCNGwjkVyT3uMRUhp-LmmwXq0n4NqFA)
+    * `https://www.google.com/url?q=http://ecomputernotes.com/java/stream/byte-stream-classes&sa=D&ust=1597082442662000&usg=AFQjCNGwjkVyT3uMRUhp-LmmwXq0n4NqFA`

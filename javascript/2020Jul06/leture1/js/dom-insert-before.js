@@ -1,0 +1,1 @@
+parent.insertBefore(childToBeInserted, siblingOfChildToBeInjectedBefore);

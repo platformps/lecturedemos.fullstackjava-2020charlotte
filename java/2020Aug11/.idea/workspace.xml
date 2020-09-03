@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1052df0b-d09c-47ae-8a07-c7b7df274345" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../2020Aug03/src/test/java/com/github/perscholas/CollectorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2020Aug03/src/test/java/com/github/perscholas/CollectorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README-Sample.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/perscholas/License.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/perscholas/LicenseBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/perscholas/MainApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/perscholas/lectureutils/FileUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/perscholas/lectureutils/LocalHomeDirectoryReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/perscholas/lectureutils/LocalProjectDirectoryReference.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/Slide5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/TestBuilderPattern.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/TestFolderContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/TestGetAbsolutePath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/TestIsAbsolute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/TestLicense.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/perscholas/TestMakeFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../2020Jul29/src/test/java/com/github/perscholas/BuiltInFunctionalInterfacesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../2020Jul29/src/test/java/com/github/perscholas/BuiltInFunctionalInterfacesTest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1fxjEwVNcEXDlD2XqqjyoS63L3s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1052df0b-d09c-47ae-8a07-c7b7df274345" name="Default Changelist" comment="" />
+      <created>1597166530015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597166530015</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
