@@ -15,6 +15,10 @@ public interface LoggerInterface {
         getLogger().log(level, String.format(string, args));
     }
 
+    default void log(String message, Object... args) {
+        log(getLogger().getLevel(), message, args);
+    }
+
     default void info(String message, Object... args) {
         log(Level.INFO, message, args);
     }
