@@ -1,0 +1,21 @@
+div {
+    text-align: center;
+    border: 2px dash red;
+    width: 800px;
+    height: 400px;
+}
+
+#div1 {
+    background: linear-gradient(to left bottom, blue, pink);git
+    float: left;
+}
+
+#div2 {
+    background-color: antiquewhite;
+    float: right;
+}
+
+#div3 {
+    background-color: blueviolet;
+    clear:both;
+}

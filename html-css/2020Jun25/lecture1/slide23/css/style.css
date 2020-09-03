@@ -1,0 +1,21 @@
+.flex_container {
+    width: 1000px;
+    height: 1000px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.flex_item {
+    background-color: beige;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+
+
