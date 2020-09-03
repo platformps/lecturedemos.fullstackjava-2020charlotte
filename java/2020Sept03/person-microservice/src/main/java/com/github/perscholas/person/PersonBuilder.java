@@ -1,4 +1,4 @@
-package com.github.perscholas;
+package com.github.perscholas.person;
 
 import java.util.Date;
 
