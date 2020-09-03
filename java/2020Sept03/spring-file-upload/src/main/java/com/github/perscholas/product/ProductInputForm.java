@@ -1,6 +1,5 @@
 package com.github.perscholas.product;
 
-import com.github.perscholas.person.Person;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,7 +9,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.io.*;
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 /**
  * Created by leon on 9/3/2020.
@@ -48,6 +50,4 @@ public class ProductInputForm {
         model.addAttribute("product", product);
         return "viewProductDetail";
     }
-
-
 }
