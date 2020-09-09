@@ -6,15 +6,15 @@ import java.util.List;
 /**
  * Created by leon on 9/2/2020.
  */
-public class PersonService implements PersonServiceInterface {
+public class PersonServiceImpl implements PersonServiceInterface {
     private List<Person> repository;
 
-    public PersonService(List<Person> repository) {
-        this.repository = repository;
+    public PersonServiceImpl() {
+        this(new ArrayList<>());
     }
 
-    public PersonService() {
-        this(new ArrayList<>());
+    public PersonServiceImpl(List<Person> repository) {
+        this.repository = repository;
     }
 
     @Override

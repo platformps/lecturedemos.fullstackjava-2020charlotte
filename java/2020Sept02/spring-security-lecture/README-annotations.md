@@ -7,7 +7,7 @@
 	* An object representative of a snap shot of data from a database.
 	* By default, maps this entity to a table whose name is the name of the annotated class. Can be rerouted via the `@Table` annotation
 	* Entities are said to be _fungible_, or _mutually interchangeable_.
-* **Pre-requisites for use:**
+* **Pre-requesites for use:**
 	* An interface cannot be an entity.
 	* An enum cannot be an entity.
 	* The class can be abstract or concrete.
@@ -85,7 +85,6 @@
 #### `@Component`
 * Annotates class signature
 * **Description**
-    * denotes that this class will be registered a singleton to the IOC container.
 	* denotes that Spring framework will autodetect these classes for dependency injection when annotation-based configuration and classpath scanning is used.
 * **Prerequisites for use:**
 	* none	
@@ -117,7 +116,7 @@
 	* specialized form of `@Component`
 	* indicates that a particular class serves the role of a controller
 	* acts as a stereotype for the annotated class, indicating its role
-	* dispatcher scans such annotated classes for mapped methods and detects `@RequestMapping` annotations
+	* dispatcher scans such annotated classes for mapped methods and detects @RequestMapping annotations
 * **Pre-requesites for use:**
 	* none
 
