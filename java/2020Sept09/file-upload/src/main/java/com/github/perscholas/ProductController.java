@@ -31,7 +31,11 @@ public class ProductController {
     }
 
     @PostMapping(value = "/save-product")
-    public String uploadFile(@RequestParam("images") MultipartFile[] files, Model model, Product product, RedirectAttributes redirectAttributes) throws IOException {
+    public String uploadFile(
+            @RequestParam("images") MultipartFile[] files,
+            Model model,
+            Product product,
+            RedirectAttributes redirectAttributes) throws IOException {
         return productService.uploadFile(files, model, product, redirectAttributes);
     }
 }
