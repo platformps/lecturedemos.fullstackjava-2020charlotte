@@ -18,7 +18,7 @@ public class ProductService {
 
     public String inputProduct(Model model) {
         model.addAttribute("product", new Product());
-        return "productForm";
+        return "view-product-form";
     }
 
     public String uploadFile(MultipartFile[] files, Model model, Product product, RedirectAttributes redirectAttributes) {
@@ -35,12 +35,12 @@ public class ProductService {
                     outputStream.close();
                 } else {
                     redirectAttributes.addFlashAttribute("msg", "Please select at least one file.");
-                    return "redirect:/product.view-form";
+                    return "redirect:/view-product-form";
                 }
             }
             model.addAttribute("msg", "Multiple files uploaded successfully.");
             model.addAttribute("product", product);
-            return "product.view-detail";
+            return "view-product-detail";
         } catch(IOException ioe) {
             throw new RuntimeException(ioe);
         }
