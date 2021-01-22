@@ -1,0 +1,2 @@
+GREETING="hello"
+export GREETING

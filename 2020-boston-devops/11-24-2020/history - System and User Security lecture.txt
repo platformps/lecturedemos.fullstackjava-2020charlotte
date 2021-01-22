@@ -1,0 +1,331 @@
+    1  rm *
+    2  la | xargs rm
+    3  ls *
+    4  ls
+    5  cd ~/dev
+    6  ls
+    7  pwd
+    8  cd ..
+    9  ls
+   10  cd ..
+   11  ls
+   12  ls | xargs rm
+   13  eexplore r
+   14  explorer .
+   15  nautilus .
+   16  sudo apt install nautilus
+   17  cd /tmp
+   18  ls
+   19  ls -a
+   20  explorer .
+   21  explorer.exe
+   22  cd ~
+   23  ls
+   24  touch .bashrc
+   25  notepad.exe .bashrc
+   26  cd /
+   27  ls
+   28  explorer.exe .
+   29  ls
+   30  grep
+   31  cd ~/dev
+   32  mkdir ~/dev
+   33  cd ~/dev
+   34  echo echo hello world
+   35  echo echo hello world > some-script
+   36  notepad.exe some-script 
+   37  ls
+   38  mv some-script some-script.sh
+   39  ls
+   40  cat some-script.sh 
+   41  notepad.exe some-script.sh 
+   42  chmod+u+x some-script.sh 
+   43  chmod u+x some-script.sh 
+   44  ./some-script.sh 
+   45  ls
+   46  mkdir some-other-dir
+   47  mv ./some-script.sh ./some-other-dir/some-script.sh
+   48  ls
+   49  cd some-other-dir/
+   50  ls
+   51  cd ..
+   52  ./some-other-dir/some-script.sh 
+   53  cd some-other-dir/
+   54  mkdir another-dir
+   55  cd ..
+   56  cd -
+   57  ls
+   58  mv some-script.sh another-dir/some-script.sh
+   59  foo="Hello"
+   60  $foo
+   61  hello
+   62  foo=`echo "Hello world"`
+   63  foo
+   64  $foo
+   65  echo $foo
+   66  touch test.sh
+   67  nano test.sh 
+   68  ./test.sh hey did it work?
+   69  chmod u+x ./test.sh
+   70  ./test.sh hey did it work?
+   71  ./test.sh hey "did it work?"
+   72  ./test.sh "hey did it work?"
+   73  cat test.sh 
+   74  test.sh hello world
+   75  ./test.sh hello world
+   76  ./test.sh "hello world"
+   77  nano ./test.sh 
+   78  cat test.sh 
+   79  ./test.sh hello world there
+   80  ./test.sh hello world there sdadasd 
+   81  $?
+   82  echo $?
+   83  test
+   84  test -f /tmp/foo
+   85  touch /tmp/foo
+   86  test -f /tmp/foo
+   87  cd /tmp/foo
+   88  ls
+   89  test -f ./test.sh
+   90  test ! -f ./test.sh
+   91  test $A -f ./test.sh
+   92  test -f ./test.sh
+   93  $?
+   94  echo $?
+   95  0
+   96  echo $?
+   97  test -f ./test.sh
+   98  echo $?
+   99  test -f ./test.sh
+  100  $?
+  101  test -f ./test.sh
+  102  test -f ./test.shh
+  103  $?
+  104  cd ~/dev/curriculeon
+  105  cd ~/dev
+  106  exit
+  107  su -l leon
+  108  su -l leon
+  109  exi
+  110  exit
+  111  su leon
+  112  su leon
+  113  exit
+  114  su - leon
+  115  exit
+  116  sudo apt-cache update
+  117  sudo apt-cache update
+  118  sudo apt-cache update
+  119  sudo apt-cache update
+  120  sudo apt-cache update
+  121  sudo apt-get update
+  122  javac
+  123  sudo apt install openjdk-8-jdk-headless
+  124  javac
+  125  java --version
+  126  javac --version
+  127  java -version
+  128  sudo apt-get upgrade openjdk-8-jdk-headless
+  129  sudo apt-cache java
+  130  sudo apt-cache java
+  131  sudo apt-cache
+  132  sudo apt-cache search java
+  133  sudo apt-get remove java
+  134  sudo apt-get remove openjdk-8-jdk-headless
+  135  java
+  136  java -version
+  137  sudo apt-get --purge remove  openjdk-8-jdk-headless
+  138  sudo apt list -installed
+  139  apt list -installed
+  140  sudo apt-list -installed
+  141  sudo apt list --installed
+  142  sudo apt-get --purge remove openjdk-8-jre-headless
+  143  java
+  144  ./echo-all-installations-min.sh
+  145  cd ~/dev/
+  146  ls
+  147  explorer .
+  148  explorer.exe .
+  149  ls
+  150  cd lecturedemos.devops-2020boston/
+  151  ls
+  152  cd 11-23-2020/
+  153  ls
+  154  ./echo-all-installations.sh
+  155  chmod u+x ./echo-all-installations.sh
+  156  chmod u+x ./echo-all-installations-min.sh 
+  157  ./echo-all-installations.sh
+  158  ./echo-all-installations-min.sh
+  159  ls
+  160  clear
+  161  java -version
+  162  java
+  163  history
+  164  echo $date
+  165  date
+  166  date | touch
+  167  date > touch
+  168  cat touch
+  169  rm touch
+  170  date
+  171  date | touch
+  172  date < touch
+  173  date | touch filename
+  174  ls 
+  175  cat filename 
+  176  rm filename 
+  177  e="date"
+  178  e
+  179  someVariable=`date`
+  180  someVariable
+  181  $someVariable
+  182  soemVariable=date
+  183  $soemVariable
+  184  date | touch
+  185  touch $(date | tr ' ' '-')
+  186  ls
+  187  ls
+  188  cd ..
+  189  mkdir useful-scripts
+  190  cd useful-scripts/
+  191  touch create-file-with-current-time
+  192  touch `date`
+  193  ls
+  194  touch `date`
+  195  touch `date`
+  196  touch `date`
+  197  touch `date`
+  198  touch `date`
+  199  touch `date`
+  200  touch `date`
+  201  touch `date`
+  202  ls
+  203  explorer.exe .
+  204  touch my-prefix-`date`
+  205  ls
+  206  touch my-prefix-`date + %F`
+  207  touch my-prefix-`date+%F`
+  208  touch my-prefix-`date`
+  209  ls
+  210  mkdir temp
+  211  cd temp
+  212  touch "`date`"
+  213  ls
+  214  touch "`date`"
+  215  touch "`date`"
+  216  ls
+  217  explorer.exe
+  218  explorer.exe .
+  219  touch "`date`"
+  220  cd ..
+  221  cd ..
+  222  rm -rf useful-scripts/
+  223  mkdir useful-scripts
+  224  cd useful-scripts/
+  225  echo "touch \"`date`\"" > create-file-with-new-date.sh
+  226  cat create-file-with-new-date.sh 
+  227  ls
+  228  ./create-file-with-new-date.sh
+  229  chmod u+x ./create-file-with-new-date.sh 
+  230  ./create-file-with-new-date.sh
+  231  ls
+  232  rm 'Mon Nov 23 13:58:47 EST 2020' 
+  233  ls
+  234  cd ..
+  235  ls
+  236  cd 11-23-2020
+  237  ../../useful-scripts/create-file-with-new-date.sh
+  238  ../useful-scripts/create-file-with-new-date.sh
+  239  ls
+  240  explorer.exe .
+  241  ls
+  242  dpkg -l
+  243  dpkg -L bzip2 
+  244  dpkg -s bzip2
+  245  dpkg -S bzip2
+  246  yum install java
+  247  yum
+  248  rpm
+  249  sudo apt intall rpm
+  250  sudo apt intall rpm
+  251  sudo apt install rpm
+  252  rpm install yum
+  253  sudo apt-get install yum
+  254  rpm pkg yum
+  255  cat /proc/sys/kernel/pid_max
+  256  pstree
+  257  ps --forest
+  258  ps
+  259  ps aux
+  260  ps -ef
+  261  ps -ef | grep firefox
+  262  top
+  263  top
+  264  top
+  265  free -s
+  266  free -s 10
+  267  free -s 10 -g
+  268  free -s 10 -m
+  269  cd /var/log
+  270  ls
+  271  cat alternatives.log 
+  272  cd messages
+  273  mkdir messages
+  274  sudo mkdir messages
+  275  ls
+  276  cd messages/
+  277  touch song.mp3
+  278  sudo touch song.mp3
+  279  file song.mp3 
+  280  rm song.mp3 
+  281  sudo rm song.mp3 
+  282  ls
+  283  cd .
+  284  cd ..
+  285  ls
+  286  cd /etc/
+  287  ls
+  288  cat syslog.conf
+  289  cat rsyslog.conf
+  290  ifconfig
+  291  sudo apt install net-tools
+  292  ifconfig
+  293  route
+  294  ping
+  295  netstat
+  296  dig
+  297  ssh 
+  298  clear
+  299  ls
+  300  cat /passwd
+  301  cat /passwd
+  302  cat /shadow
+  303  cat passwd
+  304  cat ./shadow
+  305  sudo cat ./shadow
+  306  grep sysadmin ./passwd
+  307  getent passwd sysadmin
+  308  id
+  309  cat /etc/group
+  310  newgrp some-group
+  311  id
+  312  cat /etc/group
+  313  su leon
+  314  exit
+  315  exit
+  316  su - leon
+  317  exit
+  318  exit
+  319  su - leon
+  320  exit
+  321  su - leon
+  322  exit
+  323  su - leon
+  324  exit
+  325  cat /etc/sudoers
+  326  sudo cat /etc/sudoers
+  327  who
+  328  sudo -l leon
+  329  su -l leon
+  330  w
+  331  history > "`date`"
